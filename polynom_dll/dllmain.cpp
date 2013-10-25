@@ -9,10 +9,12 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
-		std::cout << "dll attached in " << (ul_reason_for_call?"static":"dynamic") << " mode\n\n";
+		std::cout << "dll attached in " << (lpReserved?"static":"dynamic") << " mode\n\n";
+		break;
 	case DLL_THREAD_ATTACH:
 	case DLL_THREAD_DETACH:
 	case DLL_PROCESS_DETACH:
+		std::cout << "dll detached;\n";
 		break;
 	}
 	return TRUE;

@@ -1,6 +1,6 @@
 // polynom_dll.cpp : Defines the exported functions for the DLL application.
 //
-
+#define MYDLL
 #include "stdafx.h"
 #include "polynom_dll.h"
 #include <cstring>
@@ -34,7 +34,9 @@ char * cutleft(const char * b) // делтель будет начинаться с единицы
     strcpy(r,a);
     return r;
 }
-char * __stdcall divP(const char *d, const char *e, char *r)
+
+__declspec(dllexport)//POLYDLL 
+	char * __stdcall divP(const char *d, const char *e, char *r)
 {
     char *b = cutleft(e);
     int la(len(d)),lb(len(b));

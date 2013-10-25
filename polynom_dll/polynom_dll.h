@@ -5,9 +5,9 @@ extern "C" {
 #endif
 
 #ifdef MYDLL
-#define POLYDLL __declspec(dllexport)
+#define POLYDLL _declspec(dllexport)
 #else
-#define POLYDLL __declspec(dllimport)
+#define POLYDLL _declspec(dllimport)
 #endif
 
 	POLYDLL  char * __stdcall divP(const char *d, const char *e, char *r);

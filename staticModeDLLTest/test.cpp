@@ -2,7 +2,6 @@
 #include "..\\polynom_dll\\polynom_dll.h"
 #include <iostream>
 #include <windows.h>
-#include "..\\Win32Project1\\polynom.h"
 
 using namespace std;
 #include "..\\test.h"
@@ -22,7 +21,7 @@ int main()
 	cout << a << endl;
 	test("11001110","0");
 
-	test("1100010101010010100101010111101010101010010101010101100111","101110110");
+	//test("1100010101010010100101010111101010101010010101010101100111","101110110");	//with this all doesn't place in 80 lines
 	cin.get();
     return 0;
 }
