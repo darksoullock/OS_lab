@@ -1,15 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "polynom_slib", "Win32Project1\Win32Project1.vcxproj", "{FE3594DD-93BD-4D4E-9BE8-1F2F88D2461B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sLibTest", "sLibTest\sLibTest.vcxproj", "{30A3ED91-D2E5-4122-ACCA-3537A5692CF9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "polynom_dll", "polynom_dll\polynom_dll.vcxproj", "{D863A797-1A4D-4D21-BDA1-E8F8C6780501}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC61DBD6-B303-4B4C-B38C-2144C151DEE9} = {EC61DBD6-B303-4B4C-B38C-2144C151DEE9}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "staticModeDLLTest", "staticModeDLLTest\staticModeDLLTest.vcxproj", "{973C2A37-5A64-4F2D-955B-EABC8AC7C36C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynamicModeDLLTest", "dynamicModeDLLTest\dynamicModeDLLTest.vcxproj", "{A62139FB-B4C3-41C4-B44F-8DDF7C4BB982}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rus_res", "rus_res\rus_res.vcxproj", "{03CE5549-DDF1-488D-809B-D727A6DD3D22}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "en_res", "en_res\en_res.vcxproj", "{AF9A5D75-9DA0-4C84-B9D0-315E48CB1007}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddCrc", "AddCrc\AddCrc.vcxproj", "{EC61DBD6-B303-4B4C-B38C-2144C151DEE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +46,18 @@ Global
 		{A62139FB-B4C3-41C4-B44F-8DDF7C4BB982}.Debug|Win32.Build.0 = Debug|Win32
 		{A62139FB-B4C3-41C4-B44F-8DDF7C4BB982}.Release|Win32.ActiveCfg = Release|Win32
 		{A62139FB-B4C3-41C4-B44F-8DDF7C4BB982}.Release|Win32.Build.0 = Release|Win32
+		{03CE5549-DDF1-488D-809B-D727A6DD3D22}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03CE5549-DDF1-488D-809B-D727A6DD3D22}.Debug|Win32.Build.0 = Debug|Win32
+		{03CE5549-DDF1-488D-809B-D727A6DD3D22}.Release|Win32.ActiveCfg = Release|Win32
+		{03CE5549-DDF1-488D-809B-D727A6DD3D22}.Release|Win32.Build.0 = Release|Win32
+		{AF9A5D75-9DA0-4C84-B9D0-315E48CB1007}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF9A5D75-9DA0-4C84-B9D0-315E48CB1007}.Debug|Win32.Build.0 = Debug|Win32
+		{AF9A5D75-9DA0-4C84-B9D0-315E48CB1007}.Release|Win32.ActiveCfg = Release|Win32
+		{AF9A5D75-9DA0-4C84-B9D0-315E48CB1007}.Release|Win32.Build.0 = Release|Win32
+		{EC61DBD6-B303-4B4C-B38C-2144C151DEE9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EC61DBD6-B303-4B4C-B38C-2144C151DEE9}.Debug|Win32.Build.0 = Debug|Win32
+		{EC61DBD6-B303-4B4C-B38C-2144C151DEE9}.Release|Win32.ActiveCfg = Release|Win32
+		{EC61DBD6-B303-4B4C-B38C-2144C151DEE9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
